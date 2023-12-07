@@ -1,5 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { calculateScore, parse, parseLine } from "./scrathies";
+import {
+  calculateScore,
+  howManyTickets,
+  parse,
+  parseAllLines,
+  parseLine,
+} from "./scrathies";
 import { data, sample } from "./data";
 import { sum } from "../day01";
 
@@ -35,5 +41,21 @@ describe("parse", () => {
 
   it("sums to 13 for sample", () => expect(sum(parse(sample))).toBe(13));
 
-  it("solves data", () => expect(sum(parse(data))).toBe(13));
+  it("solves data", () => expect(sum(parse(data))).toBe(20117));
+});
+
+describe("parseAllLines", () => {
+  it("returns matches", () => {
+    expect(parseAllLines(sample)).toEqual([4, 2, 2, 1, 0, 0]);
+  });
+});
+
+describe("howManyTickets", () => {
+  it("solves sample", () => {
+    expect(howManyTickets([4, 2, 2, 1, 0, 0])).toEqual(30);
+  });
+
+  it("solves data", () => {
+    expect(howManyTickets(parseAllLines(data))).toEqual(13768818);
+  });
 });
