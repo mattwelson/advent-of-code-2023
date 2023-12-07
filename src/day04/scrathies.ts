@@ -58,6 +58,5 @@ export function howManyTickets(matches: number[]) {
     );
     index++;
   }
-  console.log({ tickets, matches });
   return sum(tickets);
 }
