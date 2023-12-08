@@ -40,7 +40,7 @@ describe("problem 1 - sample data", () => {
 
 describe("problem 1 - real data", () => {
   it("filters to remove invalid", () => {
-    expect(sumRounds(filterToValid(parse(data), valid))).toBe(2683);
+    expect(sumRounds(filterToValid(parse(data), valid))).toBe(2720);
   });
 });
 
@@ -54,6 +54,6 @@ describe("problem 2 - sample data", () => {
 
 describe("problem 2 - data", () => {
   it("finds minimum solution in cubes for each colour", () => {
-    expect(sum(calculateMinimumCubes(parse(data)))).toEqual(49710);
+    expect(sum(calculateMinimumCubes(parse(data)))).toEqual(71535);
   });
 });

@@ -41,7 +41,7 @@ describe("parse", () => {
 
   it("sums to 13 for sample", () => expect(sum(parse(sample))).toBe(13));
 
-  it("solves data", () => expect(sum(parse(data))).toBe(20117));
+  it("solves data", () => expect(sum(parse(data))).toBe(21558));
 });
 
 describe("parseAllLines", () => {
@@ -56,6 +56,6 @@ describe("howManyTickets", () => {
   });
 
   it("solves data", () => {
-    expect(howManyTickets(parseAllLines(data))).toEqual(13768818);
+    expect(howManyTickets(parseAllLines(data))).toEqual(10425665);
   });
 });

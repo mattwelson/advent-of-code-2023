@@ -14,7 +14,7 @@ describe("parse", () => {
   });
 
   it("sums numbers - problem 1", () => {
-    expect(sum(parse(data))).toEqual(539637);
+    expect(sum(parse(data))).toEqual(549908);
   });
 });
 
@@ -28,7 +28,7 @@ describe("findGears", () => {
   });
 
   it("solves data", () => {
-    expect(sum(findGears(data))).toEqual(82818007);
+    expect(sum(findGears(data))).toEqual(81166799);
   });
 });
 

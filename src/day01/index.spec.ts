@@ -21,7 +21,7 @@ describe("problem 1 - sample data", () => {
 
 describe("problem 1 - data", () => {
   it("sum", () => {
-    expect(sum(parse(data))).toBe(54159);
+    expect(sum(parse(data))).toBe(54953);
   });
 });
 
@@ -42,10 +42,8 @@ describe("problem 2 - sample data", () => {
   });
 });
 
-describe("problem 1 - sample data", () => {
+describe("problem 2 - data", () => {
   it("sum", () => {
-    // Oopsy, wrong answer!
-    expect(sum(parseAlphaNumeric(data))).toBeGreaterThan(53859);
-    expect(sum(parseAlphaNumeric(data))).toBe(53866);
+    expect(sum(parseAlphaNumeric(data))).toBe(53868);
   });
 });

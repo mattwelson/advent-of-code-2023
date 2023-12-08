@@ -1,6 +1,6 @@
 export function parse(input: string) {
   return input
-    .split("\r")
+    .split(/\n/)
     .map((l) => [...l].filter((c) => /\d/.test(c)))
     .map((l) => `${l[0]}${l[l.length - 1]}`)
     .map((n) => parseInt(n, 10));
