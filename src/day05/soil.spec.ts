@@ -87,3 +87,6 @@ describe("processAllSeeds", () => {
     expect(Math.min(...processAllSeeds(data))).toEqual(35);
   });
 });
+
+// NOTE: part 2 looks harder, and has huge arrays,
+// I think it might work better doing it backwards
