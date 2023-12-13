@@ -84,7 +84,7 @@ describe("processAllSeeds", () => {
   });
 
   it("data min", () => {
-    expect(Math.min(...processAllSeeds(data))).toEqual(35);
+    expect(Math.min(...processAllSeeds(data))).toEqual(31599214);
   });
 });
 
